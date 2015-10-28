@@ -1,0 +1,931 @@
+2015-10-22 19:06:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Articles could not be found.
+Exception Attributes: array (
+  'class' => 'Articles',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /Lab/articles/index
+Stack Trace:
+#0 C:\xampp\htdocs\Lab\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-22 19:11:07 Error: [Cake\View\Exception\MissingTemplateException] Template file "Articles\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Articles\\index.ctp',
+)
+Request URL: /Lab/articles/index
+Stack Trace:
+#0 C:\xampp\htdocs\Lab\vendor\cakephp\cakephp\src\View\View.php(575): Cake\View\View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\Lab\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 C:\xampp\htdocs\Lab\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 C:\xampp\htdocs\Lab\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#4 C:\xampp\htdocs\Lab\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2015-10-22 19:24:02 Error: [Cake\View\Exception\MissingTemplateException] Template file "Articles\view.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Articles\\view.ctp',
+)
+Request URL: /Lab/articles/view/1
+Stack Trace:
+#0 C:\xampp\htdocs\Lab\vendor\cakephp\cakephp\src\View\View.php(575): Cake\View\View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\Lab\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 C:\xampp\htdocs\Lab\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 C:\xampp\htdocs\Lab\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#4 C:\xampp\htdocs\Lab\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2015-10-22 19:41:47 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /Lab/img/images/add.png
+Stack Trace:
+#0 C:\xampp\htdocs\Lab\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-22 19:42:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /Lab/img/add.png
+Stack Trace:
+#0 C:\xampp\htdocs\Lab\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-22 19:43:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /Lab/img/add.png
+Stack Trace:
+#0 C:\xampp\htdocs\Lab\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-22 19:43:46 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /Lab/img/add.png
+Stack Trace:
+#0 C:\xampp\htdocs\Lab\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-22 19:43:48 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /Lab/img/add.png
+Stack Trace:
+#0 C:\xampp\htdocs\Lab\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-22 19:45:28 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /Lab/img/add.png
+Stack Trace:
+#0 C:\xampp\htdocs\Lab\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-22 19:47:04 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /Lab/img/add.png
+Stack Trace:
+#0 C:\xampp\htdocs\Lab\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-22 19:47:27 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /Lab/img/add.png
+Stack Trace:
+#0 C:\xampp\htdocs\Lab\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-22 19:48:23 Error: [Cake\Routing\Exception\MissingControllerException] Controller class I..images could not be found.
+Exception Attributes: array (
+  'class' => 'I..images',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /Lab/i..images/add.png
+Stack Trace:
+#0 C:\xampp\htdocs\Lab\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-22 19:48:23 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /Lab/img/add.png
+Stack Trace:
+#0 C:\xampp\htdocs\Lab\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-22 19:48:47 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /Lab/img/add.png
+Stack Trace:
+#0 C:\xampp\htdocs\Lab\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-22 19:49:00 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /Lab/img/add.png
+Stack Trace:
+#0 C:\xampp\htdocs\Lab\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-22 19:49:00 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Images could not be found.
+Exception Attributes: array (
+  'class' => 'Images',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /Lab/images/add.png
+Stack Trace:
+#0 C:\xampp\htdocs\Lab\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-22 19:49:52 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /Lab/img/add.png
+Stack Trace:
+#0 C:\xampp\htdocs\Lab\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-22 19:49:52 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Src could not be found.
+Exception Attributes: array (
+  'class' => 'Src',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /Lab/src/Template/Articles/images/add.png
+Stack Trace:
+#0 C:\xampp\htdocs\Lab\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-22 19:50:27 Error: [Cake\Controller\Exception\MissingActionException] Action ArticlesController::src() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'ArticlesController',
+  'action' => 'src',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /Lab/articles/src/Template/Articles/images/add.png
+Stack Trace:
+#0 C:\xampp\htdocs\Lab\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\Lab\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#2 C:\xampp\htdocs\Lab\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-10-22 19:50:28 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /Lab/img/add.png
+Stack Trace:
+#0 C:\xampp\htdocs\Lab\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-22 19:54:52 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Lab\src\Template\Articles\edit.ctp, line 15]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Articles\edit.ctp, line 15
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::render() - CORE\src\View\View.php, line 578
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-22 19:55:10 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\Lab\src\Template\Articles\edit.ctp, line 15]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Articles\edit.ctp, line 15
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::render() - CORE\src\View\View.php, line 578
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-28 02:01:53 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Pizzeria could not be found.
+Exception Attributes: array (
+  'class' => 'Pizzeria',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /WebTechnologies/Pizzeria/pizzeria/
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-28 02:02:30 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Pizzeria could not be found.
+Exception Attributes: array (
+  'class' => 'Pizzeria',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /WebTechnologies/Pizzeria/pizzeria/
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-28 02:02:49 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\PizzeriaController.php, line 21]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-28 02:02:49 Error: [Cake\Error\FatalErrorException] Call to a member function find() on a non-object
+Request URL: /WebTechnologies/Pizzeria/pizzeria/
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Web...', 21)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-28 02:03:49 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\PizzeriaController.php, line 21]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-28 02:03:49 Error: [Cake\Error\FatalErrorException] Call to a member function find() on a non-object
+Request URL: /WebTechnologies/Pizzeria/pizzeria/
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Web...', 21)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-28 02:04:55 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\PizzeriaController.php, line 21]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-28 02:04:56 Error: [Cake\Error\FatalErrorException] Call to a member function find() on a non-object
+Request URL: /WebTechnologies/Pizzeria/pizzeria/
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Web...', 21)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-28 14:34:54 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\PizzeriaController.php, line 21]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-28 14:34:54 Error: [Cake\Error\FatalErrorException] Call to a member function find() on a non-object
+Request URL: /WebTechnologies/Pizzeria/pizzeria/
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Web...', 21)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-28 14:42:40 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pizzeria.pizzeria' doesn't exist
+Request URL: /WebTechnologies/Pizzeria/pizzeria/
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'pizzeria', Array, Object(Cake\Database\Schema\Table))
+#1 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('pizzeria', Array)
+#2 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Table.php(423): Cake\Database\Schema\CachedCollection->describe('pizzeria')
+#3 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Query.php(164): Cake\ORM\Table->schema()
+#4 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Query.php(122): Cake\ORM\Query->addDefaultTypes(Object(Cake\ORM\Table))
+#5 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Table.php(1228): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(Cake\ORM\Table))
+#6 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Table.php(931): Cake\ORM\Table->query()
+#7 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#8 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Controller\Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(Cake\ORM\Table), Array)
+#9 C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\PizzeriaController.php(21): Cake\Controller\Controller->paginate(Object(Cake\ORM\Table))
+#10 [internal function]: App\Controller\PizzeriaController->index()
+#11 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#12 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#13 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PizzeriaController))
+#14 C:\wamp\www\WebTechnologies\Pizzeria\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#15 {main}
+
+
+2015-10-28 14:45:11 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\wamp\www\WebTechnologies\Pizzeria\src\Template\Customers\index.ctp, line 14]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Customers\index.ctp, line 14
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::render() - CORE\src\View\View.php, line 578
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-28 14:55:05 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Imgs could not be found.
+Exception Attributes: array (
+  'class' => 'Imgs',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /WebTechnologies/Pizzeria/imgs/pizza_1.jpg
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-28 14:58:52 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pizzeria.pizzeria' doesn't exist
+Request URL: /WebTechnologies/Pizzeria/pizzeria/
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'pizzeria', Array, Object(Cake\Database\Schema\Table))
+#1 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('pizzeria', Array)
+#2 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Table.php(423): Cake\Database\Schema\CachedCollection->describe('pizzeria')
+#3 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Query.php(164): Cake\ORM\Table->schema()
+#4 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Query.php(122): Cake\ORM\Query->addDefaultTypes(Object(Cake\ORM\Table))
+#5 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Table.php(1228): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(Cake\ORM\Table))
+#6 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Table.php(931): Cake\ORM\Table->query()
+#7 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#8 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Controller\Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(Cake\ORM\Table), Array)
+#9 C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\PizzeriaController.php(21): Cake\Controller\Controller->paginate(Object(Cake\ORM\Table))
+#10 [internal function]: App\Controller\PizzeriaController->index()
+#11 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#12 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#13 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PizzeriaController))
+#14 C:\wamp\www\WebTechnologies\Pizzeria\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#15 {main}
+
+
+2015-10-28 15:14:25 Error: Fatal Error (4): syntax error, unexpected '=' in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php, line 21]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-28 15:14:25 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '='
+Request URL: /WebTechnologies/Pizzeria/customers/
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\Web...', 21)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-28 15:16:40 Error: Fatal Error (4): syntax error, unexpected '=' in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php, line 21]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-28 15:16:41 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '='
+Request URL: /WebTechnologies/Pizzeria/customers/
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\Web...', 21)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-28 15:19:35 Error: Fatal Error (4): syntax error, unexpected '[', expecting '(' in [C:\wamp\www\WebTechnologies\Pizzeria\src\Template\Customers\add.ctp, line 8]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-28 15:19:36 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '[', expecting '('
+Request URL: /WebTechnologies/Pizzeria/customers/
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\Web...', 8)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-28 15:28:06 Error: Fatal Error (4): syntax error, unexpected '$customer' (T_VARIABLE), expecting function (T_FUNCTION) in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php, line 14]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-28 15:28:07 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '$customer' (T_VARIABLE), expecting function (T_FUNCTION)
+Request URL: /WebTechnologies/Pizzeria/customers/
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\Web...', 14)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-28 15:28:49 Error: Fatal Error (4): syntax error, unexpected '$customer' (T_VARIABLE), expecting function (T_FUNCTION) in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php, line 14]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-28 15:28:49 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '$customer' (T_VARIABLE), expecting function (T_FUNCTION)
+Request URL: /WebTechnologies/Pizzeria/customers/
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\Web...', 14)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-28 15:31:13 Error: Fatal Error (4): syntax error, unexpected '$this' (T_VARIABLE) in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php, line 13]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-28 15:31:13 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /WebTechnologies/Pizzeria/customers/
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\Web...', 13)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-28 16:54:26 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php, line 57]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-28 16:54:27 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ';'
+Request URL: /WebTechnologies/Pizzeria/customers/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\Web...', 57)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-28 16:54:42 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php, line 57]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-28 16:54:43 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ';'
+Request URL: /WebTechnologies/Pizzeria/customers/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\Web...', 57)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-28 16:59:19 Error: Fatal Error (4): syntax error, unexpected '$provinces' (T_VARIABLE), expecting function (T_FUNCTION) in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php, line 14]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-28 16:59:20 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '$provinces' (T_VARIABLE), expecting function (T_FUNCTION)
+Request URL: /WebTechnologies/Pizzeria/customers/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\Web...', 14)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-28 17:03:51 Error: Fatal Error (4): syntax error, unexpected 'id' (T_STRING), expecting '&' or variable (T_VARIABLE) in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php, line 14]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-28 17:03:51 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'id' (T_STRING), expecting '&' or variable (T_VARIABLE)
+Request URL: /WebTechnologies/Pizzeria/customers/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\Web...', 14)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-28 17:04:19 Error: Fatal Error (4): syntax error, unexpected '{' in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php, line 16]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-28 17:04:20 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '{'
+Request URL: /WebTechnologies/Pizzeria/customers/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\Web...', 16)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-28 17:04:37 Error: Fatal Error (1): Call to undefined function App\Controller\getProvince() in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php, line 73]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-28 17:04:37 Error: [Cake\Error\FatalErrorException] Call to undefined function App\Controller\getProvince()
+Request URL: /WebTechnologies/Pizzeria/customers/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', 'C:\\wamp\\www\\Web...', 73)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-28 17:05:26 Error: Fatal Error (1): Call to undefined function App\Controller\getProvince() in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php, line 72]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-28 17:05:26 Error: [Cake\Error\FatalErrorException] Call to undefined function App\Controller\getProvince()
+Request URL: /WebTechnologies/Pizzeria/customers/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', 'C:\\wamp\\www\\Web...', 72)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-28 17:05:29 Error: Fatal Error (1): Call to undefined function App\Controller\getProvince() in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php, line 72]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-28 17:05:29 Error: [Cake\Error\FatalErrorException] Call to undefined function App\Controller\getProvince()
+Request URL: /WebTechnologies/Pizzeria/customers/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', 'C:\\wamp\\www\\Web...', 72)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-28 17:05:38 Error: Fatal Error (1): Call to undefined function App\Controller\getProvince() in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php, line 72]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-28 17:05:38 Error: [Cake\Error\FatalErrorException] Call to undefined function App\Controller\getProvince()
+Request URL: /WebTechnologies/Pizzeria/customers/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', 'C:\\wamp\\www\\Web...', 72)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-28 17:06:31 Error: Fatal Error (1): Call to undefined function App\Controller\getProvince() in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php, line 72]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-28 17:06:31 Error: [Cake\Error\FatalErrorException] Call to undefined function App\Controller\getProvince()
+Request URL: /WebTechnologies/Pizzeria/customers/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', 'C:\\wamp\\www\\Web...', 72)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-28 17:07:08 Error: Fatal Error (1): Call to undefined function App\Controller\getProvince() in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php, line 72]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-28 17:07:08 Error: [Cake\Error\FatalErrorException] Call to undefined function App\Controller\getProvince()
+Request URL: /WebTechnologies/Pizzeria/customers/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', 'C:\\wamp\\www\\Web...', 72)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-28 17:07:18 Error: Fatal Error (1): Call to undefined function App\Controller\getProvince() in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php, line 72]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-28 17:07:19 Error: [Cake\Error\FatalErrorException] Call to undefined function App\Controller\getProvince()
+Request URL: /WebTechnologies/Pizzeria/customers/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', 'C:\\wamp\\www\\Web...', 72)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-28 17:10:59 Error: Fatal Error (1): Call to undefined function App\Controller\getProvince() in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php, line 58]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-28 17:11:00 Error: [Cake\Error\FatalErrorException] Call to undefined function App\Controller\getProvince()
+Request URL: /WebTechnologies/Pizzeria/customers/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', 'C:\\wamp\\www\\Web...', 58)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-28 17:17:45 Error: Fatal Error (1): Call to undefined function App\Controller\getProvince() in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php, line 59]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-28 17:17:46 Error: [Cake\Error\FatalErrorException] Call to undefined function App\Controller\getProvince()
+Request URL: /WebTechnologies/Pizzeria/customers/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', 'C:\\wamp\\www\\Web...', 59)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-28 17:18:02 Error: Fatal Error (1): Call to undefined function App\Controller\getProvince() in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php, line 59]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-28 17:18:02 Error: [Cake\Error\FatalErrorException] Call to undefined function App\Controller\getProvince()
+Request URL: /WebTechnologies/Pizzeria/customers/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', 'C:\\wamp\\www\\Web...', 59)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-28 17:18:20 Error: Fatal Error (1): Call to undefined function App\Controller\getProvince() in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php, line 59]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-28 17:18:21 Error: [Cake\Error\FatalErrorException] Call to undefined function App\Controller\getProvince()
+Request URL: /WebTechnologies/Pizzeria/customers/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', 'C:\\wamp\\www\\Web...', 59)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-28 17:18:37 Error: Fatal Error (4): syntax error, unexpected '=' in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php, line 59]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-28 17:18:38 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '='
+Request URL: /WebTechnologies/Pizzeria/customers/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\Web...', 59)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-28 17:19:37 Error: Fatal Error (1): Call to undefined function App\Controller\getProvince() in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php, line 59]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-28 17:19:37 Error: [Cake\Error\FatalErrorException] Call to undefined function App\Controller\getProvince()
+Request URL: /WebTechnologies/Pizzeria/customers/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', 'C:\\wamp\\www\\Web...', 59)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-28 17:19:49 Error: Fatal Error (1): Call to undefined function App\Controller\getProvince() in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php, line 59]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-28 17:19:49 Error: [Cake\Error\FatalErrorException] Call to undefined function App\Controller\getProvince()
+Request URL: /WebTechnologies/Pizzeria/customers/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', 'C:\\wamp\\www\\Web...', 59)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-28 17:29:50 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR) in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php, line 58]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-28 17:29:50 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Request URL: /WebTechnologies/Pizzeria/customers/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\Web...', 58)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-28 17:30:13 Error: Fatal Error (1): Call to undefined function App\Controller\getProvince() in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php, line 60]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-28 17:30:13 Error: [Cake\Error\FatalErrorException] Call to undefined function App\Controller\getProvince()
+Request URL: /WebTechnologies/Pizzeria/customers/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', 'C:\\wamp\\www\\Web...', 60)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-28 17:30:31 Error: Fatal Error (1): Call to undefined function App\Controller\getProvince() in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php, line 60]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-28 17:30:31 Error: [Cake\Error\FatalErrorException] Call to undefined function App\Controller\getProvince()
+Request URL: /WebTechnologies/Pizzeria/customers/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', 'C:\\wamp\\www\\Web...', 60)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-28 17:30:44 Error: Fatal Error (1): Call to undefined function App\Controller\getProvince() in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php, line 60]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-28 17:30:44 Error: [Cake\Error\FatalErrorException] Call to undefined function App\Controller\getProvince()
+Request URL: /WebTechnologies/Pizzeria/customers/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', 'C:\\wamp\\www\\Web...', 60)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-28 17:32:31 Error: Fatal Error (1): Call to undefined function App\Controller\getProvince() in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php, line 57]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-28 17:32:32 Error: [Cake\Error\FatalErrorException] Call to undefined function App\Controller\getProvince()
+Request URL: /WebTechnologies/Pizzeria/customers/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', 'C:\\wamp\\www\\Web...', 57)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
