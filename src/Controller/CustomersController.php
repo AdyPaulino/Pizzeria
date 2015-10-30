@@ -55,12 +55,15 @@ class CustomersController extends AppController
         $customer = $this->Customers->newEntity();
         if ($this->request->is('post')) {
             $this->request->data['province'] = $this->getProvince($this->request->data['province']);
+            $errorMsg = $this->validateFeedbackForm($this->request->data);
+            $this->set('errorMsg', $errorMsg);
+            
             $customer = $this->Customers->patchEntity($customer, $this->request->data);
-            if ($this->Customers->save($customer)) {
+           /* if ($this->Customers->save($customer)) {
                 $this->Flash->success(__('Your customer has been saved.'));
                 return $this->redirect(['action' => 'index']);
             } 
-            $this->Flash->error(__('Unable to add your customer.'));
+            $this->Flash->error(__('Unable to add your customer.')); */
         }
         $this->set('customer', $customer);
     }
@@ -104,6 +107,47 @@ class CustomersController extends AppController
         }
         $this->set(compact('customer'));
         $this->set('_serialize', ['customer']);
+    }
+    
+    public function validateFeedbackForm($arr) {
+        extract($arr);
+
+        if(!isset($personName, $email, $phone, $street, $province, $city, $postalCode)) return;
+        
+        if(!$personName) {
+          return "Please enter your name";
+        }
+
+       /* if(!$inputName) {
+          return "Please enter your name";
+        }
+		
+		if(!$inputPhone) {
+          return "Please enter your telephone number";
+        }
+		
+		if(!preg_match("/\w+@\w+\.\w+/", $inputEmail)) {
+          return "Please enter a valid email address";
+        }
+		
+		if(!$inputStreet) {
+          return "Please enter your street number and street name";
+        }
+		
+		if(!$selectProvince) {
+          return "Please select your Province";
+        }
+		
+		if(!$inputCity) {
+          return "Please enter your City";
+        }
+		
+		if(!preg_match("/[A-Z]{1}\d{1}[A-Z]{1}\s\d{1}[A-Z]{1}\d{1}/", $inputPostalCode)) {
+          return "Please enter your Postal Code";
+        } */
+
+		//personalInformation($arr);
+		
     }
 
     /**
