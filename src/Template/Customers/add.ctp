@@ -4,11 +4,6 @@
     <div class="row">
         <div class="form-group col-lg-6 col-sm-12">
             <?php
-                if(isset($errorMsg) && $errorMsg) {
-                    echo "<p class=\"alert alert-warning\">", htmlspecialchars($errorMsg), "</p>\n\n";
-                }
-            ?>
-            <?php
                 echo $this->Form->create($customer); ?>
             <fieldset> <legend>Personal Information</legend>
             <?php
@@ -27,11 +22,8 @@
                 ?>
                 </fieldset>
             </fieldset>
-            <div class="form-group col-lg-12 col-sm-12 text-right">
-               <button type="submit" class="btn btn-success" id="buttonOrder" name="buttonOrder">Order</button>
-            </div>
              <?php
-                //echo $this->Form->button(__('Save Customer'), array('id'=>'buttonOrder')); 
+                echo $this->Form->button(__('Save Customer')); 
                 echo $this->Form->end();
             ?>
         </div>

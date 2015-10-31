@@ -929,3 +929,531 @@ Stack Trace:
 #2 {main}
 
 
+2015-10-31 11:51:58 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pizzeria.pizzeria' doesn't exist
+Request URL: /WebTechnologies/Pizzeria/pizzeria/
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'pizzeria', Array, Object(Cake\Database\Schema\Table))
+#1 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('pizzeria', Array)
+#2 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Table.php(423): Cake\Database\Schema\CachedCollection->describe('pizzeria')
+#3 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Query.php(164): Cake\ORM\Table->schema()
+#4 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Query.php(122): Cake\ORM\Query->addDefaultTypes(Object(Cake\ORM\Table))
+#5 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Table.php(1228): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(Cake\ORM\Table))
+#6 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Table.php(931): Cake\ORM\Table->query()
+#7 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#8 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Controller\Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(Cake\ORM\Table), Array)
+#9 C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\PizzeriaController.php(21): Cake\Controller\Controller->paginate(Object(Cake\ORM\Table))
+#10 [internal function]: App\Controller\PizzeriaController->index()
+#11 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#12 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#13 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PizzeriaController))
+#14 C:\wamp\www\WebTechnologies\Pizzeria\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#15 {main}
+
+
+2015-10-31 12:13:27 Error: [InvalidArgumentException] Unable to call method "" in "default" provider for field "phone"
+Request URL: /WebTechnologies/Pizzeria/customers/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Validation\Validator.php(667): Cake\Validation\ValidationRule->process('5197290371', Array, Array)
+#1 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Validation\Validator.php(136): Cake\Validation\Validator->_processRules('phone', Object(Cake\Validation\ValidationSet), Array, true)
+#2 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Marshaller.php(189): Cake\Validation\Validator->errors(Array, true)
+#3 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Marshaller.php(457): Cake\ORM\Marshaller->_validate(Array, Array, true)
+#4 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Table.php(2046): Cake\ORM\Marshaller->merge(Object(App\Model\Entity\Customer), Array, Array)
+#5 C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php(59): Cake\ORM\Table->patchEntity(Object(App\Model\Entity\Customer), Array)
+#6 [internal function]: App\Controller\CustomersController->add()
+#7 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#8 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#9 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\CustomersController))
+#10 C:\wamp\www\WebTechnologies\Pizzeria\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2015-10-31 12:14:08 Error: [InvalidArgumentException] Unable to call method "" in "default" provider for field "phone"
+Request URL: /WebTechnologies/Pizzeria/customers/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Validation\Validator.php(667): Cake\Validation\ValidationRule->process('5197290371565', Array, Array)
+#1 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Validation\Validator.php(136): Cake\Validation\Validator->_processRules('phone', Object(Cake\Validation\ValidationSet), Array, true)
+#2 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Marshaller.php(189): Cake\Validation\Validator->errors(Array, true)
+#3 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Marshaller.php(457): Cake\ORM\Marshaller->_validate(Array, Array, true)
+#4 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Table.php(2046): Cake\ORM\Marshaller->merge(Object(App\Model\Entity\Customer), Array, Array)
+#5 C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php(59): Cake\ORM\Table->patchEntity(Object(App\Model\Entity\Customer), Array)
+#6 [internal function]: App\Controller\CustomersController->add()
+#7 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#8 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#9 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\CustomersController))
+#10 C:\wamp\www\WebTechnologies\Pizzeria\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2015-10-31 12:16:39 Error: [InvalidArgumentException] Unable to call method "" in "default" provider for field "phone"
+Request URL: /WebTechnologies/Pizzeria/customers/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Validation\Validator.php(667): Cake\Validation\ValidationRule->process('5197290371565', Array, Array)
+#1 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Validation\Validator.php(136): Cake\Validation\Validator->_processRules('phone', Object(Cake\Validation\ValidationSet), Array, true)
+#2 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Marshaller.php(189): Cake\Validation\Validator->errors(Array, true)
+#3 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Marshaller.php(457): Cake\ORM\Marshaller->_validate(Array, Array, true)
+#4 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Table.php(2046): Cake\ORM\Marshaller->merge(Object(App\Model\Entity\Customer), Array, Array)
+#5 C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php(59): Cake\ORM\Table->patchEntity(Object(App\Model\Entity\Customer), Array)
+#6 [internal function]: App\Controller\CustomersController->add()
+#7 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#8 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#9 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\CustomersController))
+#10 C:\wamp\www\WebTechnologies\Pizzeria\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2015-10-31 12:16:55 Error: [InvalidArgumentException] Unable to call method "" in "default" provider for field "phone"
+Request URL: /WebTechnologies/Pizzeria/customers/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Validation\Validator.php(667): Cake\Validation\ValidationRule->process('5197290371', Array, Array)
+#1 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Validation\Validator.php(136): Cake\Validation\Validator->_processRules('phone', Object(Cake\Validation\ValidationSet), Array, true)
+#2 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Marshaller.php(189): Cake\Validation\Validator->errors(Array, true)
+#3 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Marshaller.php(457): Cake\ORM\Marshaller->_validate(Array, Array, true)
+#4 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Table.php(2046): Cake\ORM\Marshaller->merge(Object(App\Model\Entity\Customer), Array, Array)
+#5 C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php(59): Cake\ORM\Table->patchEntity(Object(App\Model\Entity\Customer), Array)
+#6 [internal function]: App\Controller\CustomersController->add()
+#7 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#8 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#9 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\CustomersController))
+#10 C:\wamp\www\WebTechnologies\Pizzeria\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2015-10-31 12:18:13 Error: [InvalidArgumentException] Unable to call method "" in "default" provider for field "phoneNumber"
+Request URL: /WebTechnologies/Pizzeria/customers/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Validation\Validator.php(667): Cake\Validation\ValidationRule->process('2269721003', Array, Array)
+#1 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Validation\Validator.php(136): Cake\Validation\Validator->_processRules('phoneNumber', Object(Cake\Validation\ValidationSet), Array, true)
+#2 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Marshaller.php(189): Cake\Validation\Validator->errors(Array, true)
+#3 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Marshaller.php(457): Cake\ORM\Marshaller->_validate(Array, Array, true)
+#4 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Table.php(2046): Cake\ORM\Marshaller->merge(Object(App\Model\Entity\Customer), Array, Array)
+#5 C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php(59): Cake\ORM\Table->patchEntity(Object(App\Model\Entity\Customer), Array)
+#6 [internal function]: App\Controller\CustomersController->add()
+#7 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#8 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#9 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\CustomersController))
+#10 C:\wamp\www\WebTechnologies\Pizzeria\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2015-10-31 12:20:24 Error: [ReflectionException] Method phone does not exist
+Request URL: /WebTechnologies/Pizzeria/customers/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Validation\RulesProvider.php(64): ReflectionClass->getMethod('phone')
+#1 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Validation\ValidationRule.php(140): Cake\Validation\RulesProvider->__call('phone', Array)
+#2 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Validation\ValidationRule.php(140): Cake\Validation\RulesProvider->phone('5197290371123', Array)
+#3 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Validation\Validator.php(667): Cake\Validation\ValidationRule->process('5197290371123', Array, Array)
+#4 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Validation\Validator.php(136): Cake\Validation\Validator->_processRules('phone', Object(Cake\Validation\ValidationSet), Array, true)
+#5 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Marshaller.php(189): Cake\Validation\Validator->errors(Array, true)
+#6 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Marshaller.php(457): Cake\ORM\Marshaller->_validate(Array, Array, true)
+#7 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Table.php(2046): Cake\ORM\Marshaller->merge(Object(App\Model\Entity\Customer), Array, Array)
+#8 C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php(59): Cake\ORM\Table->patchEntity(Object(App\Model\Entity\Customer), Array)
+#9 [internal function]: App\Controller\CustomersController->add()
+#10 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#11 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\CustomersController))
+#13 C:\wamp\www\WebTechnologies\Pizzeria\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-10-31 12:25:57 Error: [ReflectionException] Method /(\d{3})d{3}-d{4}/ does not exist
+Request URL: /WebTechnologies/Pizzeria/customers/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Validation\RulesProvider.php(64): ReflectionClass->getMethod('/(\\d{3})d{3}-d{...')
+#1 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Validation\ValidationRule.php(140): Cake\Validation\RulesProvider->__call('/(\\d{3})d{3}-d{...', Array)
+#2 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Validation\ValidationRule.php(140): Cake\Validation\RulesProvider->/(\d{3})d{3}-d{4}/('5197290371123', Array)
+#3 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Validation\Validator.php(667): Cake\Validation\ValidationRule->process('5197290371123', Array, Array)
+#4 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Validation\Validator.php(136): Cake\Validation\Validator->_processRules('phone', Object(Cake\Validation\ValidationSet), Array, true)
+#5 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Marshaller.php(189): Cake\Validation\Validator->errors(Array, true)
+#6 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Marshaller.php(457): Cake\ORM\Marshaller->_validate(Array, Array, true)
+#7 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Table.php(2046): Cake\ORM\Marshaller->merge(Object(App\Model\Entity\Customer), Array, Array)
+#8 C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php(59): Cake\ORM\Table->patchEntity(Object(App\Model\Entity\Customer), Array)
+#9 [internal function]: App\Controller\CustomersController->add()
+#10 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#11 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\CustomersController))
+#13 C:\wamp\www\WebTechnologies\Pizzeria\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-10-31 12:32:58 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\wamp\www\WebTechnologies\Pizzeria\src\Model\Table\CustomersTable.php, line 63]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-31 12:32:59 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /WebTechnologies/Pizzeria/customers/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\Web...', 63)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-31 12:39:46 Error: Fatal Error (4): syntax error, unexpected 'array' (T_ARRAY) in [C:\wamp\www\WebTechnologies\Pizzeria\src\Model\Table\CustomersTable.php, line 70]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-31 12:39:46 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'array' (T_ARRAY)
+Request URL: /WebTechnologies/Pizzeria/customers/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\Web...', 70)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-31 12:41:34 Error: Fatal Error (4): syntax error, unexpected 'array' (T_ARRAY) in [C:\wamp\www\WebTechnologies\Pizzeria\src\Model\Table\CustomersTable.php, line 70]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-31 12:41:34 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'array' (T_ARRAY)
+Request URL: /WebTechnologies/Pizzeria/customers/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\Web...', 70)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-31 12:42:44 Error: [InvalidArgumentException] Unable to call method "" in "default" provider for field "email"
+Request URL: /WebTechnologies/Pizzeria/customers/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Validation\Validator.php(667): Cake\Validation\ValidationRule->process('ivampjr@gmail.c...', Array, Array)
+#1 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Validation\Validator.php(136): Cake\Validation\Validator->_processRules('email', Object(Cake\Validation\ValidationSet), Array, true)
+#2 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Marshaller.php(189): Cake\Validation\Validator->errors(Array, true)
+#3 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Marshaller.php(457): Cake\ORM\Marshaller->_validate(Array, Array, true)
+#4 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Table.php(2046): Cake\ORM\Marshaller->merge(Object(App\Model\Entity\Customer), Array, Array)
+#5 C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php(59): Cake\ORM\Table->patchEntity(Object(App\Model\Entity\Customer), Array)
+#6 [internal function]: App\Controller\CustomersController->add()
+#7 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#8 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#9 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\CustomersController))
+#10 C:\wamp\www\WebTechnologies\Pizzeria\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2015-10-31 12:44:16 Warning: Warning (4096): Argument 1 passed to Cake\Validation\ValidationRule::__construct() must be of the type array, string given, called in C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Validation\ValidationSet.php on line 124 and defined in [C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Validation\ValidationRule.php, line 78]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\ValidationRule::__construct() - CORE\src\Validation\ValidationRule.php, line 78
+Cake\Validation\ValidationSet::add() - CORE\src\Validation\ValidationSet.php, line 124
+Cake\Validation\Validator::add() - CORE\src\Validation\Validator.php, line 317
+App\Model\Table\CustomersTable::validationDefault() - APP/Model\Table\CustomersTable.php, line 63
+Cake\ORM\Table::validator() - CORE\src\Validation\ValidatorAwareTrait.php, line 106
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 178
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 457
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 2046
+App\Controller\CustomersController::add() - APP/Controller\CustomersController.php, line 59
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-31 12:44:16 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Validation\ValidationRule.php, line 185]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\ValidationRule::_addValidatorProps() - CORE\src\Validation\ValidationRule.php, line 185
+Cake\Validation\ValidationRule::__construct() - CORE\src\Validation\ValidationRule.php, line 80
+Cake\Validation\ValidationSet::add() - CORE\src\Validation\ValidationSet.php, line 124
+Cake\Validation\Validator::add() - CORE\src\Validation\Validator.php, line 317
+App\Model\Table\CustomersTable::validationDefault() - APP/Model\Table\CustomersTable.php, line 63
+Cake\ORM\Table::validator() - CORE\src\Validation\ValidatorAwareTrait.php, line 106
+Cake\ORM\Marshaller::_validate() - CORE\src\ORM\Marshaller.php, line 178
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 457
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 2046
+App\Controller\CustomersController::add() - APP/Controller\CustomersController.php, line 59
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-31 12:44:17 Error: [InvalidArgumentException] Unable to call method "" in "default" provider for field "email"
+Request URL: /WebTechnologies/Pizzeria/customers/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Validation\Validator.php(667): Cake\Validation\ValidationRule->process('ivampjr@gmail.c...', Array, Array)
+#1 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Validation\Validator.php(136): Cake\Validation\Validator->_processRules('email', Object(Cake\Validation\ValidationSet), Array, true)
+#2 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Marshaller.php(189): Cake\Validation\Validator->errors(Array, true)
+#3 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Marshaller.php(457): Cake\ORM\Marshaller->_validate(Array, Array, true)
+#4 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Table.php(2046): Cake\ORM\Marshaller->merge(Object(App\Model\Entity\Customer), Array, Array)
+#5 C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php(59): Cake\ORM\Table->patchEntity(Object(App\Model\Entity\Customer), Array)
+#6 [internal function]: App\Controller\CustomersController->add()
+#7 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#8 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#9 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\CustomersController))
+#10 C:\wamp\www\WebTechnologies\Pizzeria\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2015-10-31 12:44:49 Warning: Warning (4096): Argument 1 passed to Cake\Validation\ValidationRule::__construct() must be of the type array, string given, called in C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Validation\ValidationSet.php on line 124 and defined in [C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Validation\ValidationRule.php, line 78]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\ValidationRule::__construct() - CORE\src\Validation\ValidationRule.php, line 78
+Cake\Validation\ValidationSet::add() - CORE\src\Validation\ValidationSet.php, line 124
+Cake\Validation\Validator::add() - CORE\src\Validation\Validator.php, line 317
+App\Model\Table\CustomersTable::validationDefault() - APP/Model\Table\CustomersTable.php, line 63
+Cake\ORM\Table::validator() - CORE\src\Validation\ValidatorAwareTrait.php, line 106
+Cake\View\Form\EntityContext::_getValidator() - CORE\src\View\Form\EntityContext.php, line 403
+Cake\View\Form\EntityContext::isRequired() - CORE\src\View\Form\EntityContext.php, line 349
+Cake\View\Helper\FormHelper::_magicOptions() - CORE\src\View\Helper\FormHelper.php, line 1231
+Cake\View\Helper\FormHelper::_parseOptions() - CORE\src\View\Helper\FormHelper.php, line 1132
+Cake\View\Helper\FormHelper::input() - CORE\src\View\Helper\FormHelper.php, line 987
+include - APP/Template\Customers\add.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::render() - CORE\src\View\View.php, line 578
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-31 12:44:49 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Validation\ValidationRule.php, line 185]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\ValidationRule::_addValidatorProps() - CORE\src\Validation\ValidationRule.php, line 185
+Cake\Validation\ValidationRule::__construct() - CORE\src\Validation\ValidationRule.php, line 80
+Cake\Validation\ValidationSet::add() - CORE\src\Validation\ValidationSet.php, line 124
+Cake\Validation\Validator::add() - CORE\src\Validation\Validator.php, line 317
+App\Model\Table\CustomersTable::validationDefault() - APP/Model\Table\CustomersTable.php, line 63
+Cake\ORM\Table::validator() - CORE\src\Validation\ValidatorAwareTrait.php, line 106
+Cake\View\Form\EntityContext::_getValidator() - CORE\src\View\Form\EntityContext.php, line 403
+Cake\View\Form\EntityContext::isRequired() - CORE\src\View\Form\EntityContext.php, line 349
+Cake\View\Helper\FormHelper::_magicOptions() - CORE\src\View\Helper\FormHelper.php, line 1231
+Cake\View\Helper\FormHelper::_parseOptions() - CORE\src\View\Helper\FormHelper.php, line 1132
+Cake\View\Helper\FormHelper::input() - CORE\src\View\Helper\FormHelper.php, line 987
+include - APP/Template\Customers\add.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::render() - CORE\src\View\View.php, line 578
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-31 12:45:08 Warning: Warning (4096): Argument 1 passed to Cake\Validation\ValidationRule::__construct() must be of the type array, string given, called in C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Validation\ValidationSet.php on line 124 and defined in [C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Validation\ValidationRule.php, line 78]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\ValidationRule::__construct() - CORE\src\Validation\ValidationRule.php, line 78
+Cake\Validation\ValidationSet::add() - CORE\src\Validation\ValidationSet.php, line 124
+Cake\Validation\Validator::add() - CORE\src\Validation\Validator.php, line 317
+App\Model\Table\CustomersTable::validationDefault() - APP/Model\Table\CustomersTable.php, line 63
+Cake\ORM\Table::validator() - CORE\src\Validation\ValidatorAwareTrait.php, line 106
+Cake\View\Form\EntityContext::_getValidator() - CORE\src\View\Form\EntityContext.php, line 403
+Cake\View\Form\EntityContext::isRequired() - CORE\src\View\Form\EntityContext.php, line 349
+Cake\View\Helper\FormHelper::_magicOptions() - CORE\src\View\Helper\FormHelper.php, line 1231
+Cake\View\Helper\FormHelper::_parseOptions() - CORE\src\View\Helper\FormHelper.php, line 1132
+Cake\View\Helper\FormHelper::input() - CORE\src\View\Helper\FormHelper.php, line 987
+include - APP/Template\Customers\add.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::render() - CORE\src\View\View.php, line 578
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-31 12:45:08 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Validation\ValidationRule.php, line 185]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Validation\ValidationRule::_addValidatorProps() - CORE\src\Validation\ValidationRule.php, line 185
+Cake\Validation\ValidationRule::__construct() - CORE\src\Validation\ValidationRule.php, line 80
+Cake\Validation\ValidationSet::add() - CORE\src\Validation\ValidationSet.php, line 124
+Cake\Validation\Validator::add() - CORE\src\Validation\Validator.php, line 317
+App\Model\Table\CustomersTable::validationDefault() - APP/Model\Table\CustomersTable.php, line 63
+Cake\ORM\Table::validator() - CORE\src\Validation\ValidatorAwareTrait.php, line 106
+Cake\View\Form\EntityContext::_getValidator() - CORE\src\View\Form\EntityContext.php, line 403
+Cake\View\Form\EntityContext::isRequired() - CORE\src\View\Form\EntityContext.php, line 349
+Cake\View\Helper\FormHelper::_magicOptions() - CORE\src\View\Helper\FormHelper.php, line 1231
+Cake\View\Helper\FormHelper::_parseOptions() - CORE\src\View\Helper\FormHelper.php, line 1132
+Cake\View\Helper\FormHelper::input() - CORE\src\View\Helper\FormHelper.php, line 987
+include - APP/Template\Customers\add.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::render() - CORE\src\View\View.php, line 578
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-10-31 12:56:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Orders could not be found.
+Exception Attributes: array (
+  'class' => 'Orders',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /WebTechnologies/Pizzeria/orders/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-10-31 13:34:11 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\wamp\www\WebTechnologies\Pizzeria\src\Template\Orders\add.ctp, line 16]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-31 13:34:12 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /WebTechnologies/Pizzeria/orders/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\Web...', 16)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-31 14:00:22 Error: Fatal Error (1): Call to a member function input() on a non-object in [C:\wamp\www\WebTechnologies\Pizzeria\src\Template\Orders\add.ctp, line 43]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-31 14:00:22 Error: [Cake\Error\FatalErrorException] Call to a member function input() on a non-object
+Request URL: /WebTechnologies/Pizzeria/orders/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Web...', 43)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-31 14:02:21 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [C:\wamp\www\WebTechnologies\Pizzeria\src\Template\Orders\add.ctp, line 48]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-31 14:02:22 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /WebTechnologies/Pizzeria/orders/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\Web...', 48)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-31 14:08:44 Error: Fatal Error (1): Call to a member function get() on a non-object in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\OrdersController.php, line 59]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-31 14:08:44 Error: [Cake\Error\FatalErrorException] Call to a member function get() on a non-object
+Request URL: /WebTechnologies/Pizzeria/orders/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Web...', 59)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-31 14:59:59 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Request URL: /WebTechnologies/Pizzeria/orders/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(171): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Database\Connection.php(270): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Database\Query.php(174): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Table.php(1530): Cake\Database\Query->execute()
+#6 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Table.php(1446): Cake\ORM\Table->_insert(Object(App\Model\Entity\Order), Array)
+#7 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Table.php(1377): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Order), Object(ArrayObject))
+#8 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Database\Connection.php(557): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\ORM\Table.php(1378): Cake\Database\Connection->transactional(Object(Closure))
+#10 C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\OrdersController.php(60): Cake\ORM\Table->save(Object(App\Model\Entity\Order))
+#11 [internal function]: App\Controller\OrdersController->add()
+#12 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#13 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#14 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\OrdersController))
+#15 C:\wamp\www\WebTechnologies\Pizzeria\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 {main}
+
+
+2015-10-31 15:39:59 Error: Fatal Error (1): Call to a member function read() on a non-object in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\OrdersController.php, line 58]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-31 15:39:59 Error: [Cake\Error\FatalErrorException] Call to a member function read() on a non-object
+Request URL: /WebTechnologies/Pizzeria/orders/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Web...', 58)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-31 15:50:20 Error: Fatal Error (1): Call to a member function write() on a non-object in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php, line 65]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-31 15:50:20 Error: [Cake\Error\FatalErrorException] Call to a member function write() on a non-object
+Request URL: /WebTechnologies/Pizzeria/customers/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Web...', 65)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-31 17:05:36 Error: Fatal Error (1): Call to a member function destroy() on a non-object in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\OrdersController.php, line 78]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-31 17:05:36 Error: [Cake\Error\FatalErrorException] Call to a member function destroy() on a non-object
+Request URL: /WebTechnologies/Pizzeria/orders/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Web...', 78)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-10-31 17:06:11 Error: Fatal Error (1): Call to a member function destroy() on a non-object in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\OrdersController.php, line 78]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-10-31 17:06:12 Error: [Cake\Error\FatalErrorException] Call to a member function destroy() on a non-object
+Request URL: /WebTechnologies/Pizzeria/orders/add
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\Web...', 78)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
