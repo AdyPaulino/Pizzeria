@@ -1,21 +1,66 @@
-<!-- File: src/Template/Customers/index.ctp -->
-<?php echo $this->Html->docType(); ?>
-<html lang="en">
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Conestoga Pizzeria - Assignment 1</title>
-        <?php 
-            echo $this->Html->css(['style',                         'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css']); 
-            echo $this->Html->script(['validation', 'javascript']);
-        ?>
-	</head>
-	<body>
-        <div id="logo">
-			<p>
-				Conestoga Pizzeria
-			</p>
-        </div>
-        <?php //include('/add.ctp'); ?>
-        <p><?= $this->Html->link('Add Customer', ['action' => 'add']) ?></p>
-    </body>
-</html>
+<!-- File: src/Template/Orders/index.ctp -->
+<h1>Current orders</h1>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Pizza size</th>
+        <th>Created</th>
+        <th>Actions</th>
+    </tr>
+
+<!-- Here's where we loop through our $orders query object, printing out order info -->
+
+    <?php foreach ($orders as $order): ?>
+    <tr>
+        <td><?= $order->id ?></td>
+        <td>
+            <?= $this->Html->link($order->pizzaSize, ['action' => 'view', $order->id]) ?>
+        </td>
+        <td>
+           
+        </td>
+        <td>
+            <?= $this->Form->postLink(
+                'Delete',
+                ['action' => 'delete', $order->id],
+                ['confirm' => 'Are you sure?'])
+            ?>
+            <?= $this->Html->link('Edit', ['action' => 'edit', $order->id]) ?>
+        </td>
+    </tr>
+    <?php endforeach; ?>
+
+</table>
+
+<h1>Past orders</h1>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Pizza size</th>
+        <th>Created</th>
+        <th>Actions</th>
+    </tr>
+
+<!-- Here's where we loop through our $orders query object, printing out order info -->
+
+    <?php foreach ($completed_orders as $order): ?>
+    <tr>
+        <td><?= $order->id ?></td>
+        <td>
+            <?= $this->Html->link($order->pizzaSize, ['action' => 'view', $order->id]) ?>
+        </td>
+        <td>
+           
+        </td>
+        <td>
+            <?= $this->Form->postLink(
+                'Delete',
+                ['action' => 'delete', $order->id],
+                ['confirm' => 'Are you sure?'])
+            ?>
+            <?= $this->Html->link('Edit', ['action' => 'edit', $order->id]) ?>
+        </td>
+    </tr>
+    <?php endforeach; ?>
+
+</table>

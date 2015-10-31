@@ -60,8 +60,6 @@ class CustomersController extends AppController
             $customer = $this->Customers->patchEntity($customer, $this->request->data);
            if ($this->Customers->save($customer)) {
                 $this->Flash->success(__('Your customer has been saved.'));
-                $session = $this->request->session(); 
-                $session->write('user_id', $customer['id']);
                 return $this->redirect(['action' => 'index']);
             } 
             $this->Flash->error(__('Unable to add your customer.')); 
