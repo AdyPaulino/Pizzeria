@@ -10,7 +10,7 @@
         <td><?= $order->id ?></td>
         <td><?= $order->pizzaSize?></td>
         <td>
-            <?= $this->Html->link('Completed', ['action' => 'complete', $order->id]) ?>
+            <?= $this->Html->link('Mark as completed', ['action' => 'complete', $order->id]) ?>
         </td>
     </tr>
 </table>

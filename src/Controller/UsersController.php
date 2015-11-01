@@ -27,8 +27,16 @@ class UsersController extends AppController
             $user = $this->Auth->identify();
             if ($user) {
                 $this->Auth->setUser($user);
+                //set user
                 $session = $this->request->session(); 
                 $session->write('user_id', $user);
+                
+                //set customer variable    
+                $this->loadModel('Customers');
+                $res = $this->Customers->find()->where(['user' => $user['id']]);
+                $data = $res->toArray();
+                $session->write('customer_id',  $data[0]['id']);
+                
                 return $this->redirect($this->Auth->redirectUrl());
             }
             $this->Flash->error(__('Invalid username or password, try again'));
@@ -59,10 +67,23 @@ class UsersController extends AppController
             $user = $this->Users->patchEntity($user, $this->request->data);
             if ($this->Users->save($user)) {
                 $this->Flash->success(__('The user has been saved.'));
-                return $this->redirect(['action' => 'add']);
+                $session = $this->request->session(); 
+                $session->write('user_id', $user);
+                
+                return $this->addCustomer();
             }
             $this->Flash->error(__('Unable to add the user.'));
         }
         $this->set('user', $user);
+    }
+    
+    public function addCustomer(){
+        //add user
+        //$session = $this->request->session(); 
+       // $session->write('user_id', $user);
+        //verify if there is a customer related to this user
+        //return $this->Customers->exists(['customer' => $userId]);
+        
+        return $this->redirect(['controller'=>'customers', 'action' => 'add']);
     }
 }

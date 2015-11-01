@@ -38,14 +38,6 @@ class OrdersController extends AppController
         if ($this->request->action === 'add') {
             return true;
         }
-
-        // The owner of an article can edit and delete it
-        /*if (in_array($this->request->action, ['edit', 'delete'])) {
-            $articleId = (int)$this->request->params['pass'][0];
-            if ($this->Articles->isOwnedBy($articleId, $user['id'])) {
-                return true;
-            }
-        } */
         
         if (in_array($this->request->action, ['edit', 'delete', 'complete'])) {
             return parent::isAuthorized($user);
@@ -58,9 +50,23 @@ class OrdersController extends AppController
     {
         $order = $this->Orders->newEntity();
         $this->$order;
-        //$this->set('orders', $this->Orders->find('all'));
-        $this->set('completed_orders', $this->Orders->find()->where(['completed' => 1]));
-        $this->set('orders', $this->Orders->find()->where(['completed' => 0]));
+        // The owner of an order can see it
+        $user = $this->Auth->user();
+        if (!parent::isAuthorized($user)) {
+            $session = $this->request->session();
+            $customer_session = $session->read('customer_id');
+            if ($this->Orders->isOwnedBy($customer_session)) {
+                $this->set('completed_orders', $this->Orders->find()->where(['completed' => 1, 'customer' => $customer_session]));
+            $this->set('orders', $this->Orders->find()->where(['completed' => 0, 'customer' => $customer_session]));
+            } else {
+                $this->set('completed_orders', []);
+                $this->set('orders', []);
+            }
+        } else {
+            $this->set('completed_orders', $this->Orders->find()->where(['completed' => 1]));
+            $this->set('orders', $this->Orders->find()->where(['completed' => 0]));
+        }
+      
     }
 
     /**

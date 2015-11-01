@@ -45,4 +45,9 @@ class OrdersTable extends Table
         
         return $validator;
     }
+    
+    public function isOwnedBy($customerId)
+    {
+        return $this->exists(['customer' => $customerId]);
+    }
 }

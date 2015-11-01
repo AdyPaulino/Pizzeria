@@ -57,10 +57,19 @@ class CustomersController extends AppController
         if ($this->request->is('post')) {
             $this->request->data['province'] = $this->getProvince($this->request->data['province']);
             
-            $customer = $this->Customers->patchEntity($customer, $this->request->data);
+        //add user
+        $session = $this->request->session();
+        $user_session = $session->read('user_id');
+        
+        $customer = $this->Customers->patchEntity($customer, $this->request->data);
+            $customer->user = $user_session['id'];
            if ($this->Customers->save($customer)) {
                 $this->Flash->success(__('Your customer has been saved.'));
-                return $this->redirect(['action' => 'index']);
+                //return $this->redirect(['action' => 'index']);
+               //add customer in session 
+               $session->write('customer_id', $customer->id);
+               
+               return $this->redirect(['controller'=>'users','action' => 'login']);
             } 
             $this->Flash->error(__('Unable to add your customer.')); 
         }
