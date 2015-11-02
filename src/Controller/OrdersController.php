@@ -97,27 +97,65 @@ class OrdersController extends AppController
         if ($this->request->is('post')) {
             //add customer
             $session = $this->request->session();
-            $user_session = $session->read('user_id');
-            $this->request->data['customer'] = $user_session['id'];
-            //adding toppings as a string
-            $toppings = '';
-            if (isset($this->request->data['toppings'])){
-                foreach ($this->request->data['toppings'] as $row) {
-                    if (!empty($toppings)){
-                        $toppings = $toppings.',';
-                    }
-                    $toppings = $toppings.$row;
-                }
-                $this->request->data['toppings'] = $toppings;
-            }
+            $customer_session = $session->read('customer_id');
+            $this->request->data['customer'] = $customer_session;
+            
+            //add toppings
+            $this->addToppings();
+            
             $order = $this->Orders->patchEntity($order, $this->request->data);
+            
+            $order->total = $this->calculateTotal($order);
+            
            if ($this->Orders->save($order)) {
                 $this->Flash->success(__('Your order has been saved.'));
-                return $this->redirect(['action' => 'add']);
+                return $this->redirect(['action' => 'index']);
             } 
             $this->Flash->error(__('Unable to add your order.'));
         }
         $this->set('order', $order);
+    }
+    
+    private function addToppings(){
+        //adding toppings as a string
+        $toppings = '';
+        if (isset($this->request->data['toppings'])){
+            foreach ($this->request->data['toppings'] as $row) {
+                if (!empty($toppings)){
+                    $toppings = $toppings.',';
+                }
+                $toppings = $toppings.$row;
+            }
+            $this->request->data['toppings'] = $toppings;
+        }
+
+    }
+    
+    function calculateTotal($order){
+		$total = 0;
+		
+        $pizzaSize = $order->pizzaSize;	
+		switch ($pizzaSize){
+			case "Small":
+				$total += 5;
+				break;
+			case "Med":
+				$total += 10;
+				break;
+			case "Large":
+				$total += 15;
+				break;
+			case "XL":
+				$total += 20;
+				break;			
+        }
+        
+        if ($order->crustType === 'Stuffed'){
+            $total += 2;
+        }
+        
+        return $total;
+        
     }
     
     private function getProvince($position){

@@ -5,7 +5,7 @@
     <tr>
         <th>Id</th>
         <th>Pizza size</th>
-        <th>Created</th>
+        <th>Total</th>
         <th>Actions</th>
     </tr>
 
@@ -17,9 +17,7 @@
         <td>
             <?= $this->Html->link($order->pizzaSize, ['action' => 'view', $order->id]) ?>
         </td>
-        <td>
-           
-        </td>
+        <td><?= 'CAD '.$this->Number->precision($order->total, 2) ?></td>
         <td>
             <?= $this->Form->postLink(
                 'Delete',
@@ -50,9 +48,7 @@
         <td>
             <?= $this->Html->link($order->pizzaSize, ['action' => 'view', $order->id]) ?>
         </td>
-        <td>
-           
-        </td>
+        <td><?= 'CAD '.$this->Number->precision($order->total, 2) ?></td>
         <td>
             <?= $this->Form->postLink(
                 'Delete',
