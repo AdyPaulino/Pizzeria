@@ -2554,3 +2554,29 @@ Stack Trace:
 #2 {main}
 
 
+2015-11-02 20:33:33 Warning: Warning (4096): Argument 1 passed to App\Controller\CustomersController::beforeFilter() must be an instance of App\Controller\Event, instance of Cake\Event\Event given, called in C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Event\EventManager.php on line 385 and defined in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\CustomersController.php, line 14]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\CustomersController::beforeFilter() - APP/Controller\CustomersController.php, line 14
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 385
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 355
+Cake\Controller\Controller::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 78
+Cake\Controller\Controller::startupProcess() - CORE\src\Controller\Controller.php, line 491
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 109
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-11-02 20:57:35 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\wamp\www\WebTechnologies\Pizzeria\src\Controller\OrdersController.php, line 124]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\OrdersController::addToppings() - APP/Controller\OrdersController.php, line 124
+App\Controller\OrdersController::add() - APP/Controller\OrdersController.php, line 108
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+

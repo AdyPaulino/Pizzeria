@@ -100,12 +100,9 @@ class OrdersController extends AppController
             $customer_session = $session->read('customer_id');
             $this->request->data['customer'] = $customer_session;
             
-            //add toppings
-            $this->addToppings();
-            
             $order = $this->Orders->patchEntity($order, $this->request->data);
             
-            $order->total = $this->calculateTotal($order);
+            $order = $this->calculateTotal($order);
             
            if ($this->Orders->save($order)) {
                 $this->Flash->success(__('Your order has been saved.'));
@@ -116,18 +113,28 @@ class OrdersController extends AppController
         $this->set('order', $order);
     }
     
-    private function addToppings(){
+    private function addToppings($order){
         //adding toppings as a string
         $toppings = '';
+        
         if (isset($this->request->data['toppings'])){
+            $count = sizeof($this->request->data['toppings']);
+            
             foreach ($this->request->data['toppings'] as $row) {
                 if (!empty($toppings)){
-                    $toppings = $toppings.',';
+                    $toppings = $toppings.', ';
                 }
                 $toppings = $toppings.$row;
             }
-            $this->request->data['toppings'] = $toppings;
+            
+            $order->toppings = $toppings;
+            
+            if ($count > 1){
+                $order->total = $order->total + ($count * 0.5);
+            }
         }
+        
+         return $order;
 
     }
     
@@ -154,24 +161,43 @@ class OrdersController extends AppController
             $total += 2;
         }
         
-        return $total;
+        $order->total = $total;
+        
+        //add toppings
+        $order = $this->addToppings($order);
+        
+        return $this->calculateProvinceTax($order);
         
     }
     
-    private function getProvince($position){
-        //$provinces = new array['QC', 'MB', 'ON', 'SK'];
-        switch ($position){
-            case 0:
-                return 'QC';
-             case 1:
-                return 'MB';
-             case 2:
-                return 'ON';
-             case 3:
-                return 'SK';
+    function calculateProvinceTax($order){
+        $session = $this->request->session();
+        $province = $session->read('customer_province');
+        $total = $order->total;
+        echo $total;
+        $tax = 1;
+        switch ($province){
+            case 'QC':
+                $tax = 14.975;
+				break;
+             case 'MB':
+                $tax = 8;
+				break;
+             case 'ON':
+                $tax = 13;
+				break;
+             case 'SK':
+                $tax = 10;
+				break;
              default:
-                return '';
+                $tax = 1;
         }
+        
+        $total = $total * ((100+$tax)/100);
+
+        $order->total = $total;
+        
+        return $order;
     }
 
     /**
@@ -188,6 +214,9 @@ class OrdersController extends AppController
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $order = $this->Orders->patchEntity($order, $this->request->data);
+            
+            $order = $this->calculateTotal($order);
+            
             if ($this->Orders->save($order)) {
                 $this->Flash->success(__('The order has been saved.'));
                 return $this->redirect(['action' => 'index']);

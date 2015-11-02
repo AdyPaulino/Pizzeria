@@ -35,7 +35,10 @@ class UsersController extends AppController
                 $this->loadModel('Customers');
                 $res = $this->Customers->find()->where(['user' => $user['id']]);
                 $data = $res->toArray();
-                $session->write('customer_id',  $data[0]['id']);
+                if (isset($data[0])){
+                    $session->write('customer_id',  $data[0]['id']);
+                    $session->write('customer_province',  $data[0]['province']);
+                }
                 
                 return $this->redirect($this->Auth->redirectUrl());
             }
@@ -70,20 +73,11 @@ class UsersController extends AppController
                 $session = $this->request->session(); 
                 $session->write('user_id', $user);
                 
-                return $this->addCustomer();
+                return $this->redirect(['controller'=>'customers', 'action' => 'add']);
             }
             $this->Flash->error(__('Unable to add the user.'));
         }
         $this->set('user', $user);
     }
     
-    public function addCustomer(){
-        //add user
-        //$session = $this->request->session(); 
-       // $session->write('user_id', $user);
-        //verify if there is a customer related to this user
-        //return $this->Customers->exists(['customer' => $userId]);
-        
-        return $this->redirect(['controller'=>'customers', 'action' => 'add']);
-    }
 }

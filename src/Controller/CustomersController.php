@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Event\Event;
 
 /**
  * Customers Controller
@@ -10,6 +11,13 @@ use App\Controller\AppController;
  */
 class CustomersController extends AppController
 {
+    
+    public function beforeFilter(Event $event)
+    {
+        parent::beforeFilter($event);
+        // Allow users to register a customer.
+        $this->Auth->allow(['add']);
+    }
     
     public function initialize()
     {
