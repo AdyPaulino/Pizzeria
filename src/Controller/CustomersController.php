@@ -14,7 +14,6 @@ class CustomersController extends AppController
     
     public function beforeFilter(Event $event)
     {
-        parent::beforeFilter($event);
         // Allow users to register a customer.
         $this->Auth->allow(['add']);
     }
@@ -29,28 +28,20 @@ class CustomersController extends AppController
         $this->$customer;
         
     }
+    
+    public function isAuthorized($user)
+    {
+        return parent::isAuthorized($user);
+    }
 
     public function index()
     {
-        $customer = $this->Customers->newEntity();
-        $this->$customer;
-        //$this->set('customers', $this->Customers->find('all'));
-    }
-
-    /**
-     * View method
-     *
-     * @param string|null $id Customer id.
-     * @return void
-     * @throws \Cake\Network\Exception\NotFoundException When record not found.
-     */
-    public function view($id = null)
-    {
-        $customer = $this->Customers->get($id, [
-            'contain' => []
-        ]);
-        $this->set('customer', $customer);
-        $this->set('_serialize', ['customer']);
+        $user = $this->Auth->user();
+        if ($this->isAuthorized($user)) {
+            $customer = $this->Customers->newEntity();
+            $this->$customer;
+            $this->set('customers', $this->Customers->find('all'));
+        }
     }
     
 
@@ -73,7 +64,6 @@ class CustomersController extends AppController
             $customer->user = $user_session['id'];
            if ($this->Customers->save($customer)) {
                 $this->Flash->success(__('Your customer has been saved.'));
-                //return $this->redirect(['action' => 'index']);
                //add customer in session 
                $session->write('customer_id', $customer->id);
                
@@ -98,49 +88,5 @@ class CustomersController extends AppController
              default:
                 return '';
         }
-    }
-
-    /**
-     * Edit method
-     *
-     * @param string|null $id Customer id.
-     * @return void Redirects on successful edit, renders view otherwise.
-     * @throws \Cake\Network\Exception\NotFoundException When record not found.
-     */
-    public function edit($id = null)
-    {
-        $customer = $this->Customers->get($id, [
-            'contain' => []
-        ]);
-        if ($this->request->is(['patch', 'post', 'put'])) {
-            $customer = $this->Customers->patchEntity($customer, $this->request->data);
-            if ($this->Customers->save($customer)) {
-                $this->Flash->success(__('The customer has been saved.'));
-                return $this->redirect(['action' => 'index']);
-            } else {
-                $this->Flash->error(__('The customer could not be saved. Please, try again.'));
-            }
-        }
-        $this->set(compact('customer'));
-        $this->set('_serialize', ['customer']);
-    }
-
-    /**
-     * Delete method
-     *
-     * @param string|null $id Customer id.
-     * @return void Redirects to index.
-     * @throws \Cake\Network\Exception\NotFoundException When record not found.
-     */
-    public function delete($id = null)
-    {
-        $this->request->allowMethod(['post', 'delete']);
-        $customer = $this->Customers->get($id);
-        if ($this->Customers->delete($customer)) {
-            $this->Flash->success(__('The customer has been deleted.'));
-        } else {
-            $this->Flash->error(__('The customer could not be deleted. Please, try again.'));
-        }
-        return $this->redirect(['action' => 'index']);
     }
 }

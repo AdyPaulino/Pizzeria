@@ -25,10 +25,8 @@ class OrdersTable extends Table
         parent::initialize($config);
 
         $this->table('orders');
-        //$this->displayField('name');
+        $this->displayField('id');
         $this->primaryKey('id');
-
-        $this->addBehavior('Timestamp');
 
     }
 
@@ -40,7 +38,7 @@ class OrdersTable extends Table
      */
     public function validationDefault(Validator $validator)
     {
-        $validator
+       $validator
             ->allowEmpty('toppings');
         
         return $validator;

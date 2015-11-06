@@ -2580,3 +2580,89 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
+2015-11-06 20:04:53 Error: [Cake\View\Exception\MissingTemplateException] Template file "Customers\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Customers\\index.ctp',
+)
+Request URL: /WebTechnologies/Pizzeria/customers/
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\View\View.php(575): Cake\View\View->_getViewFileName(NULL)
+#1 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\CustomersController))
+#4 C:\wamp\www\WebTechnologies\Pizzeria\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2015-11-06 20:05:19 Error: [Cake\Controller\Exception\MissingActionException] Action CustomersController::index() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'CustomersController',
+  'action' => 'index',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /WebTechnologies/Pizzeria/customers/
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\CustomersController))
+#2 C:\wamp\www\WebTechnologies\Pizzeria\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-11-06 20:13:23 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\wamp\www\WebTechnologies\Pizzeria\src\Template\Customers\index.ctp, line 12]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Customers\index.ctp, line 12
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 970
+Cake\View\View::_render() - CORE\src\View\View.php, line 930
+Cake\View\View::render() - CORE\src\View\View.php, line 578
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-11-06 20:16:18 Error: [Cake\View\Exception\MissingTemplateException] Template file "Customers\view.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Customers\\view.ctp',
+)
+Request URL: /WebTechnologies/Pizzeria/customers/view/10
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\View\View.php(575): Cake\View\View->_getViewFileName(NULL)
+#1 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\CustomersController))
+#4 C:\wamp\www\WebTechnologies\Pizzeria\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2015-11-06 20:18:16 Error: [Cake\Controller\Exception\MissingActionException] Action CustomersController::view() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'CustomersController',
+  'action' => 'view',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /WebTechnologies/Pizzeria/customers/view/10
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\CustomersController))
+#2 C:\wamp\www\WebTechnologies\Pizzeria\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-11-06 20:23:31 Error: [Cake\View\Exception\MissingTemplateException] Template file "Users\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users\\index.ctp',
+)
+Request URL: /WebTechnologies/Pizzeria/users
+Stack Trace:
+#0 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\View\View.php(575): Cake\View\View->_getViewFileName(NULL)
+#1 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 C:\wamp\www\WebTechnologies\Pizzeria\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#4 C:\wamp\www\WebTechnologies\Pizzeria\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+

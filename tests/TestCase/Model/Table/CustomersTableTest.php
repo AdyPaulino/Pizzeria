@@ -28,9 +28,7 @@ class CustomersTableTest extends TestCase
     public function setUp()
     {
         parent::setUp();
-        $config = TableRegistry::exists('Customers') ? [] : ['className' => 'App\Model\Table\CustomersTable'];
-        $this->Customers = TableRegistry::get('Customers', $config);
-    }
+        $config = TableRegistry::exists('Customers') ? [] : ['className' => 'App\Model\Table\CustomersTable'];        $this->Customers = TableRegistry::get('Customers', $config);    }
 
     /**
      * tearDown method

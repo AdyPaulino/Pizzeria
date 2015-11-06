@@ -6,12 +6,7 @@ use Cake\ORM\Entity;
 /**
  * Order Entity.
  *
- * @property int $id
- * @property string $title
- * @property string $body
- * @property \Cake\I18n\Time $created
- * @property \Cake\I18n\Time $modified
- */
+ * @property int $id * @property string $pizzaSize * @property string $crustType * @property string $toppings * @property int $customer * @property bool $completed * @property float $total */
 class Order extends Entity
 {
 

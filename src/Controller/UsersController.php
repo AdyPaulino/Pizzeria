@@ -52,9 +52,17 @@ class UsersController extends AppController
         return $this->redirect($this->Auth->logout());
     }
 
-     public function index()
-     {
-        $this->set('users', $this->Users->find('all'));
+     public function isAuthorized($user)
+    {
+        return parent::isAuthorized($user);
+    }
+
+    public function index()
+    {
+        $user = $this->Auth->user();
+        if ($this->isAuthorized($user)) {
+            $this->set('users', $this->Users->find('all'));
+        }
     }
 
     public function view($id)

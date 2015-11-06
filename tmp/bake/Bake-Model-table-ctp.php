@@ -37,7 +37,6 @@ echo implode("\n", $uses);
 <?php foreach ($associations as $type => $assocs): ?>
 <?php foreach ($assocs as $assoc): ?>
  * @property \Cake\ORM\Association\<?= Inflector::camelize($type) ?> $<?= $assoc['alias'] ?>
-
 <?php endforeach ?>
 <?php endforeach; ?>
 <?php endif; ?>
@@ -149,7 +148,6 @@ foreach ($validation as $field => $rules):
         $validator
 <?php foreach ($validationMethods as $validationMethod): ?>
             <?= $validationMethod ?>
-
 <?php endforeach; ?>
 
 <?php

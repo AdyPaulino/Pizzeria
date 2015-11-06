@@ -17,11 +17,15 @@ class CustomersFixture extends TestFixture
      */
     // @codingStandardsIgnoreStart
     public $fields = [
+        'personName' => ['type' => 'string', 'length' => 255, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
         'id' => ['type' => 'integer', 'length' => 10, 'unsigned' => true, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
-        'title' => ['type' => 'string', 'length' => 50, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
-        'body' => ['type' => 'text', 'length' => null, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null],
-        'created' => ['type' => 'datetime', 'length' => null, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null],
-        'modified' => ['type' => 'datetime', 'length' => null, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null],
+        'phone' => ['type' => 'string', 'length' => 13, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
+        'email' => ['type' => 'string', 'length' => 255, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
+        'street' => ['type' => 'string', 'length' => 255, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
+        'province' => ['type' => 'string', 'length' => 2, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
+        'city' => ['type' => 'string', 'length' => 50, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
+        'postalCode' => ['type' => 'string', 'length' => 7, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
+        'user' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
         ],
@@ -39,11 +43,15 @@ class CustomersFixture extends TestFixture
      */
     public $records = [
         [
+            'personName' => 'Lorem ipsum dolor sit amet',
             'id' => 1,
-            'title' => 'Lorem ipsum dolor sit amet',
-            'body' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
-            'created' => '2015-10-28 14:37:27',
-            'modified' => '2015-10-28 14:37:27'
+            'phone' => 'Lorem ipsum',
+            'email' => 'Lorem ipsum dolor sit amet',
+            'street' => 'Lorem ipsum dolor sit amet',
+            'province' => '',
+            'city' => 'Lorem ipsum dolor sit amet',
+            'postalCode' => 'Lorem',
+            'user' => 1
         ],
     ];
 }

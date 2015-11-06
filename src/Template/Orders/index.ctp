@@ -1,5 +1,7 @@
 <!-- File: src/Template/Orders/index.ctp -->
-<p><?= $this->Html->link('ORDER HERE', ['action' => 'add']) ?></p>
+<p>
+<h3><?= $this->Html->link('==> Order here <==', ['action' => 'add']) ?></h3>
+</p>
 <h1>Current orders</h1>
 <table>
     <tr>
