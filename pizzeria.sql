@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 02, 2015 at 10:40 PM
+-- Generation Time: Nov 07, 2015 at 12:00 AM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -40,7 +40,16 @@ CREATE TABLE IF NOT EXISTS `customers` (
   `postalCode` varchar(7) NOT NULL,
   `user` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
+
+--
+-- Dumping data for table `customers`
+--
+
+INSERT INTO `customers` (`personName`, `id`, `phone`, `email`, `street`, `province`, `city`, `postalCode`, `user`) VALUES
+('Ady', 10, '(519)729-0371', 'ariadiny.miranda@gmail.com', '77 Doon Rd', 'ON', 'Kitchener', 'N2M 4X7', 22),
+('Junior', 11, '(226)972-1003', 'ivampjr@gmail.com', '200, Fischer Hallman', 'SK', 'Saska', 'N2M 4X7', 23),
+('John', 12, '(519)729-0373', 'ariadiny@gmail.com', '77 Doon Rd', 'MB', 'Kitchener', 'N2G 3E1', 24);
 
 -- --------------------------------------------------------
 
@@ -58,7 +67,16 @@ CREATE TABLE IF NOT EXISTS `orders` (
   `completed` tinyint(1) NOT NULL DEFAULT '0',
   `total` decimal(10,2) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=21 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=25 ;
+
+--
+-- Dumping data for table `orders`
+--
+
+INSERT INTO `orders` (`id`, `pizzaSize`, `crustType`, `toppings`, `customer`, `completed`, `total`) VALUES
+(22, 'Med', 'Stuffed', 'Bacon, Salami, Peperoni', 11, 1, '14.85'),
+(23, 'Large', 'Thin', 'Broccoli', 11, 1, '16.50'),
+(24, 'XL', 'Stuffed', 'Bacon, Salami, Peperoni, Ham, ExtraCheese, Tomato, Olives, Broccoli, GarlicSauce, TomatoSauce', 12, 0, '29.16');
 
 -- --------------------------------------------------------
 
@@ -73,7 +91,16 @@ CREATE TABLE IF NOT EXISTS `users` (
   `password` varchar(255) DEFAULT NULL,
   `role` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=22 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=25 ;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `username`, `password`, `role`) VALUES
+(22, 'ady', '$2y$10$CZgYWHLMDMdN5ZQobIcIze01X6..E.tXe6w2kQvINQ8MnX8JK7jeq', 'admin'),
+(23, 'Jr', '$2y$10$i0FQbggALvpwyiEZXCcHpOCLNYSE6.JewTlfPhkmZ7JicVY2nERIy', 'customer'),
+(24, 'john', '$2y$10$i0FQbggALvpwyiEZXCcHpOCLNYSE6.JewTlfPhkmZ7JicVY2nERIy', 'customer');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
