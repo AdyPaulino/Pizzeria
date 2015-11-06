@@ -44,10 +44,8 @@ use Cake\ORM\Entity;
 <?php foreach ($propertyHintMap as $property => $type): ?>
 <?php if ($type): ?>
  * @property <?= $type ?> $<?= $property ?>
-
 <?php else: ?>
  * @property $<?= $property ?>
-
 <?php endif; ?>
 <?php endforeach; ?>
 <?php endif; ?>

@@ -63,13 +63,10 @@ class <?= $className ?>Test extends TestCase
         parent::setUp();
 <?php if ($preConstruct): ?>
         <?= $preConstruct ?>
-
 <?php endif; ?>
         $this-><?= $subject . ' = ' . $construction ?>
-
 <?php if ($postConstruct): ?>
         <?= $postConstruct ?>
-
 <?php endif; ?>
     }
 

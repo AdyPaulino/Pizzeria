@@ -6,12 +6,7 @@ use Cake\ORM\Entity;
 /**
  * Customer Entity.
  *
- * @property int $id
- * @property string $title
- * @property string $body
- * @property \Cake\I18n\Time $created
- * @property \Cake\I18n\Time $modified
- */
+ * @property string $personName * @property int $id * @property string $phone * @property string $email * @property string $street * @property string $province * @property string $city * @property string $postalCode * @property int $user */
 class Customer extends Entity
 {
 

@@ -17,6 +17,8 @@
                         'options' => array('QC', 'MB', 'ON', 'SK'),
                         'empty' => 'Select'
                     ));
+                    echo $this->Form->input('city', array('class'=>'form-control'));
+                    echo $this->Form->input('postalCode', array('class'=>'form-control'));
                 ?>
                 </fieldset>
             </fieldset>
